@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Eloi Egea - Ingeniería Informática, Ciberseguridad y HomeLab">
+  <title>Eloi Egea - Ingeniería Informática & Ciberseguridad</title>
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+anvas id="matrix-bg"></canvas>
+
+<div class="hero">
+  <h1>Eloi Egea</h1>
+  <h2>Ingeniería Informática · Ciberseguridad · HomeLab</h2>
+  <p>
+    Estudiante de 4º de Ingeniería Informática especializado en ciberseguridad, 
+    administración de sistemas y automatización. 
+    Mantengo un HomeLab avanzado con Proxmox, Docker y servicios de seguridad.
+  </p>
+  <div class="hero-buttons">
+    <a class="btn primary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
+    <a class="btn secondary" href="public/cv.pdf" target="_blank">Descargar CV</a>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="section-title">🛠 Stack & Skills</h2>
+
+<div class="skills-grid">
+  <div class="skill-card">
+    <h3>Ciberseguridad</h3>
+    <p>Hardening, VPNs (WireGuard), firewalls Fortinet, segmentación de red, Pi-hole como DNS filtrante.</p>
+  </div>
+  <div class="skill-card">
+    <h3>HomeLab & DevOps</h3>
+    <p>Proxmox VE, Docker, Nginx Proxy Manager, Jellyfin, N8N, despliegues y servicios autosuficientes.</p>
+  </div>
+  <div class="skill-card">
+    <h3>Programación</h3>
+    <p>Python, Java, scripting en Bash, automatización de tareas, pequeños proyectos de tooling.</p>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="section-title">🔒 HomeLab de Ciberseguridad</h2>
+
+<div class="section-hacker">
+  <p>
+    Gestiono un HomeLab sobre servidor de doble CPU con Proxmox, donde despliego 
+    servicios de seguridad, media y automatización. Próximamente, integraré 
+    Prometheus + Grafana para monitorización avanzada.
+  </p>
+
+  <div class="terminal-box">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">~/homelab/status.sh</span>
+    </div>
+    <pre class="terminal-body">$ ssh eloi@homelab
+$ sudo systemctl status
+● pihole.service          - active (running)
+● nginx-proxy-manager     - active (running)
+● wireguard@wg0           - active (running)
+● jellyfin.service        - active (running)
+● n8n.service             - active (running)</pre>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="section-title">📚 Formación & Experiencia</h2>
+
+<ul class="experience-list">
+  <li>4º de Ingeniería Informática – Tecnocampus.</li>
+  <li>Prácticas como IT Support (Nutrisport/Tradebe): soporte a usuarios, gestión de AD, VPNs, firewalls.</li>
+  <li>Proyectos personales centrados en ciberseguridad, HomeLab y automatización.</li>
+</ul>
+
+<hr>
+
+<h2 class="section-title">🔥 Proyectos Destacados</h2>
+
+<div class="projects-grid">
+  <div class="project-card">
+    <h3>🎓 TFG Ciberseguridad</h3>
+    <p>Trabajo Final de Grado enfocado en análisis de vulnerabilidades y hardening de sistemas.</p>
+    <div class="tech-tags">
+      <span class="tag">LaTeX</span>
+      <span class="tag">Git</span>
+      <span class="tag">Pentesting</span>
+    </div>
+    <a href="https://github.com/TheEgea/tfg-ciber" target="_blank" class="project-link">Ver repositorio →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>🤖 Scripts de Automatización</h3>
+    <p>Colección de herramientas Python para escaneo de red, backups y parseo de logs de firewall.</p>
+    <div class="tech-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Bash</span>
+      <span class="tag">Scapy</span>
+    </div>
+    <a href="https://github.com/TheEgea/scripts" target="_blank" class="project-link">Ver repositorio →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>🏴‍☠️ CTF Writeups</h3>
+    <p>Soluciones documentadas de retos de Hack The Box, TryHackMe y PicoCTF.</p>
+    <div class="tech-tags">
+      <span class="tag">CTF</span>
+      <span class="tag">Writeups</span>
+      <span class="tag">Hacking</span>
+    </div>
+    <a href="https://github.com/TheEgea/ctf-writeups" target="_blank" class="project-link">Ver writeups →</a>
+  </div>
+</div>
+
+<hr>
+
+<h2 class="section-title">📊 GitHub Activity</h2>
+
+<div class="github-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=TheEgea&show_icons=true&theme=radical&hide_border=true&bg_color=05060a&title_color=ff4b81&icon_color=ff4b81&text_color=c5c5c5" alt="GitHub Stats">
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheEgea&layout=compact&theme=radical&hide_border=true&bg_color=05060a&title_color=ff4b81&text_color=c5c5c5" alt="Top Languages">
+</div>
+
+
+<hr>
+
+<h2 class="section-title">📬 Contacto</h2>
+
+<ul class="contact-list">
+  <li><strong>GitHub:</strong> <a href="https://github.com/TheEgea" target="_blank">TheEgea</a></li>
+  <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tu-url" target="_blank">tu-perfil</a></li>
+  <li><strong>Email:</strong> <a href="mailto:eloi@dominio.com">eloi@dominio.com</a></li>
+</ul>
+
+<footer>
+  <p>This site is open source. <a href="https://github.com/TheEgea/portfolio" target="_blank">Improve this page</a></p>
+</footer>
+
+<script src="public/js/matrix.js"></script>
+
+</body>
+</html>
