@@ -1,8 +1,9 @@
 ---
 title: Eloi Egea - Ingeniería Informática & Ciberseguridad
 ---
+<canvas id="matrix-bg"></canvas>
 
-<link rel="stylesheet" href="public/style.css">
+<link rel="stylesheet" href="public/css/style.css">
 
 <div class="hero">
   <h1>Eloi Egea</h1>
