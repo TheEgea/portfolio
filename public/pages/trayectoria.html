@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>Trayectoria - TheEgea</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="/portfolio/" class="logo">TheEgea</a>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="/public/pages/trayectoria.html">Trayectoria</a>
+            <a href="/public/pages/eventos.html">Eventos</a>
+            <a href="/public/pages/proyectos.html">Proyectos</a>
+            <a href="/public/pages/contacto.html">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="trayectoria-container">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <h2>Eloi Egea</h2>
+                <p class="subtitle">@TheEgea</p>
+                <p class="bio">Estudiante de Ingeniería Informática especializado en Ciberseguridad</p>
+                
+                <div class="sidebar-section">
+                    <h3>Contacto</h3>
+                    <p>📧 eloi240803@gmail.com</p>
+                    <p>📍 Barcelona, Catalunya</p>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Intereses</h3>
+                    <ul class="interests-list">
+                        <li>Ciberseguridad</li>
+                        <li>Administración de Sistemas</li>
+                        <li>HomeLab & DevOps</li>
+                        <li>Automatización</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- TIMELINE -->
+        <main class="timeline-content">
+            <h1 class="page-title">Mi Trayectoria</h1>
+
+            <!-- EDUCACION -->
+            <section class="timeline-section">
+                <h2 class="section-title">🎓 Educación</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3>Ingeniería Informática</h3>
+                            <span class="date">2021 - 2026</span>
+                        </div>
+                        <p class="institution">Tecnocampus - Universitat Pompeu Fabra</p>
+                        <p class="description">Grado en Ingeniería Informática con especialización en Ciberseguridad y Administración de Sistemas.</p>
+                        <div class="tags">
+                            <span class="tag">Ciberseguridad</span>
+                            <span class="tag">Redes</span>
+                            <span class="tag">Programación</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROYECTOS ACADEMICOS -->
+            <section class="timeline-section">
+                <h2 class="section-title">📚 Proyectos Académicos</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3>Trabajo Final de Grado - Ciberseguridad</h3>
+                            <span class="date">2025 - Presente</span>
+                        </div>
+                        <p class="description">Análisis de vulnerabilidades y hardening de sistemas. Documentación técnica completa.</p>
+                        <div class="tags">
+                            <span class="tag">LaTeX</span>
+                            <span class="tag">Pentesting</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <h3>LabGamblers</h3>
+                            <span class="date">2024</span>
+                        </div>
+                        <p class="description">Plataforma tipo YouTube desarrollada como proyecto universitario. Sistema de subida, streaming y gestión de contenido multimedia.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Flask</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section class="timeline-section">
+                <h2 class="section-title">🛠️ Habilidades Técnicas</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Ciberseguridad</h3>
+                        <ul>
+                            <li>Hardening & VPNs (WireGuard)</li>
+                            <li>Firewalls (Fortinet)</li>
+                            <li>Segmentación de red</li>
+                            <li>Pi-hole como DNS filtrante</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>HomeLab & DevOps</h3>
+                        <ul>
+                            <li>Proxmox VE</li>
+                            <li>Docker</li>
+                            <li>Nginx Proxy Manager</li>
+                            <li>Jellyfin, N8N</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Programación</h3>
+                        <ul>
+                            <li>Python, Java</li>
+                            <li>Scripting en Bash</li>
+                            <li>Automatización de tareas</li>
+                            <li>Tooling personalizado</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- MATRIX EFFECT -->
+    <canvas id="matrix-bg"></canvas>
+    <script src="./public/js/matrix.js"></script>
+</body>
+</html>
