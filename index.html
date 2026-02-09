@@ -2,30 +2,49 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Eloi Egea - Ingeniería Informática & Ciberseguridad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheEgea - Ingeniería Informática & Ciberseguridad</title>
   <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
+
+<nav class="navbar">
+  <a href="/portfolio/" class="logo">TheEgea</a>
+  <div class="nav-links">
+    <a href="/portfolio/">Inicio</a>
+    <a href="/portfolio/public/pages/trayectoria.html">Trayectoria</a>
+    <a href="/portfolio/public/pages/eventos.html">Eventos</a>
+    <a href="/portfolio/public/pages/proyectos.html">Proyectos</a>
+    <a href="/portfolio/public/pages/contacto.html">Contacto</a>
+  </div>
+</nav>
+
 <canvas id="matrix-bg"></canvas>
 
 
 
-
-<link rel="stylesheet" href="./public/css/style.css">
 <div class="hero">
-  <h1>Eloi Egea</h1>
+  <h1>TheEgea</h1>
   <h2>Ingeniería Informática · Ciberseguridad · HomeLab</h2>
-  <p>
-    Estudiante de 4º de Ingeniería Informática especializado en ciberseguridad, 
-    administración de sistemas y automatización. 
-    Mantengo un HomeLab avanzado con Proxmox, Docker y servicios de seguridad.
-  </p>
-  <div class="hero-buttons">
-    <a class="btn primary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
-    <a class="btn secondary" href="public/cv.pdf" target="_blank">Descargar CV</a>
+  
+  <div class="about-me">
+    <h3>Sobre mí</h3>
+    <p>
+      Me llamo <strong>Eloi Egea</strong>, estudiante de 4º de Ingeniería Informática en Tecnocampus 
+      especializado en <strong>ciberseguridad</strong> y administración de sistemas.
+    </p>
+    <p>
+      Actualmente realizo prácticas como <strong>IT Support</strong> en Nutrisport/Tradebe, 
+      donde trabajo con firewalls Fortinet, VPNs (Netskope) y Active Directory.
+    </p>
+    <p>
+      Mantengo un <strong>HomeLab avanzado</strong> con Proxmox donde despliego servicios de 
+      seguridad, media y automatización.
+    </p>
   </div>
 </div>
 
+<!-- STACK & SKILLS -->
 <h2 class="section-title">Stack & Skills</h2>
 
 <div class="skills-grid">
@@ -43,52 +62,117 @@
   </div>
 </div>
 
-
+<!-- HOMELAB -->
 <h2 class="section-title">HomeLab</h2>
 
 <div class="section-hacker">
-  <p>
-    Gestiono un HomeLab sobre servidor de doble CPU con Proxmox, donde despliego 
-    servicios de seguridad, media y automatización. Próximamente, integraré 
-    Prometheus + Grafana para monitorización avanzada.
-  </p>
-
-  <div class="terminal-box">
+  <div class="homelab-content">
+    <div class="homelab-text">
+      <p>
+        Gestiono un <strong>HomeLab</strong> sobre servidor de doble CPU con <strong>Proxmox VE</strong>, 
+        donde despliego servicios de seguridad, media y automatización.
+      </p>
+      <p><strong>Stack actual:</strong></p>
+      <ul class="homelab-stack">
+        <li>Pi-hole (DNS + Ad blocking)</li>
+        <li>Nginx Proxy Manager (Reverse proxy)</li>
+        <li>WireGuard VPN</li>
+        <li>Jellyfin (Media server)</li>
+        <li>N8N (Automatización)</li>
+        <li>Próximo: Prometheus + Grafana</li>
+      </ul>
+    </div>
+    <div class="terminal-box">
     <div class="terminal-header">
       <span class="dot red"></span>
       <span class="dot yellow"></span>
       <span class="dot green"></span>
       <span class="terminal-title">~/homelab/status.sh</span>
     </div>
-    <pre class="terminal-body">
-$ ssh eloi@homelab
+    <pre class="terminal-body">$ ssh eloi@homelab
 $ sudo systemctl status
 ● pihole.service          - active (running)
 ● nginx-proxy-manager     - active (running)
 ● wireguard@wg0           - active (running)
 ● jellyfin.service        - active (running)
-● n8n.service             - active (running)
-    </pre>
+● n8n.service             - active (running)</pre>
+  </div>
+</div>
+    
+    <!-- Opcional: Descomentar cuando tengas screenshot -->
+    
+    <div class="homelab-image">
+      <img src="./public/images/Proxmox.png" alt="HomeLab Dashboard">
+      
+    </div>
+    
+  </div>
+
+  
+
+<!-- PROYECTOS -->
+<h2 class="section-title">Proyectos Destacados</h2>
+
+<div class="projects-grid">
+  <div class="project-card">
+    <h3>LabGamblers</h3>
+    <p>Plataforma tipo YouTube desarrollada como proyecto universitario. Sistema de subida, streaming y gestión de contenido multimedia.</p>
+    <div class="tech-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Flask</span>
+      <span class="tag">Docker</span>
+    </div>
+    <a href="https://github.com/TheEgea/labgamblers" target="_blank" class="project-link">Ver repositorio →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>TFG - Ciberseguridad</h3>
+    <p>Trabajo Final de Grado enfocado en análisis de vulnerabilidades y hardening de sistemas. Documentación técnica completa.</p>
+    <div class="tech-tags">
+      <span class="tag">LaTeX</span>
+      <span class="tag">Pentesting</span>
+      <span class="tag">Research</span>
+    </div>
+    <a href="https://github.com/TheEgea/tfg" target="_blank" class="project-link">Ver repositorio →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>Proyectos Varios</h3>
+    <p>Colección de herramientas y scripts personales: descargador de YouTube, automatización de tareas, parseo de logs, etc.</p>
+    <div class="tech-tags">
+      <span class="tag">Python</span>
+      <span class="tag">Bash</span>
+      <span class="tag">Automation</span>
+    </div>
+    <a href="https://github.com/TheEgea/proyectos" target="_blank" class="project-link">Ver repositorio →</a>
   </div>
 </div>
 
-<section class="education-experience">
-  <h2 class="section-title"> Formación & Experiencia</h2>
-  <ul>
-    <li>4º de Ingeniería Informática – Tecnocampus.</li>
-    <li>Prácticas como IT Support (Nutrisport/Tradebe): soporte a usuarios, gestión de AD, VPNs, firewalls.</li>
-    <li>Proyectos personales centrados en ciberseguridad, HomeLab y automatización.</li>
-  </ul>
+<!-- EXPERIENCIA -> LinkedIn CTA -->
+<section class="linkedin-cta">
+  <h2 class="section-title">Experiencia Profesional</h2>
+  <p>
+    Mi trayectoria profesional completa está disponible en 
+    <a href="https://www.linkedin.com/in/eloi-egea" target="_blank" class="linkedin-link">LinkedIn →</a>
+  </p>
 </section>
 
+<!-- CONTACTO -->
 <section class="contact">
-  <h2 class="section-title"> Contacto</h2>
-  <ul>
-    <li>GitHub: <a href="https://github.com/TheEgea" target="_blank">TheEgea</a></li>
-    <li>LinkedIn: <a href="#" target="_blank">www.linkedin.com/in/eloi-egea</a></li>
-    <li>Email: <a href="mailto:tu@email.com">eloi240803@gmail.com</a></li>
-  </ul>
+  <h2 class="section-title">Contacto</h2>
+  
+  <div class="contact-buttons">
+    <a class="btn primary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
+    <a class="btn secondary" href="https://www.linkedin.com/in/eloi-egea" target="_blank">LinkedIn</a>
+    <a class="btn secondary" href="./public/cv.pdf" target="_blank">Descargar CV</a>
+  </div>
+  
+  <p class="contact-email">
+    También puedes contactarme en: <a href="mailto:eloi240803@gmail.com">eloi240803@gmail.com</a>
+  </p>
 </section>
-
 
 <script src="./public/js/matrix.js"></script>
+
+</body>
+</html>
