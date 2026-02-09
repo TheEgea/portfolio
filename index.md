@@ -1,0 +1,84 @@
+---
+title: Eloi Egea - Ingeniería Informática & Ciberseguridad
+---
+
+<link rel="stylesheet" href="public/style.css">
+
+<div class="hero">
+  <h1>Eloi Egea</h1>
+  <h2>Ingeniería Informática · Ciberseguridad · HomeLab</h2>
+  <p>
+    Estudiante de 4º de Ingeniería Informática especializado en ciberseguridad, 
+    administración de sistemas y automatización. 
+    Mantengo un HomeLab avanzado con Proxmox, Docker y servicios de seguridad.
+  </p>
+  <div class="hero-buttons">
+    <a class="btn primary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
+    <a class="btn secondary" href="public/cv.pdf" target="_blank">Descargar CV</a>
+  </div>
+</div>
+
+---
+
+## 🛠 Stack & Skills
+
+<div class="skills-grid">
+  <div class="skill-card">
+    <h3>Ciberseguridad</h3>
+    <p>Hardening, VPNs (WireGuard), firewalls Fortinet, segmentación de red, Pi-hole como DNS filtrante.</p>
+  </div>
+  <div class="skill-card">
+    <h3>HomeLab & DevOps</h3>
+    <p>Proxmox VE, Docker, Nginx Proxy Manager, Jellyfin, N8N, despliegues y servicios autosuficientes.</p>
+  </div>
+  <div class="skill-card">
+    <h3>Programación</h3>
+    <p>Python, Java, scripting en Bash, automatización de tareas, pequeños proyectos de tooling.</p>
+  </div>
+</div>
+
+---
+
+## 🔒 HomeLab de Ciberseguridad
+
+<div class="section-hacker">
+  <p>
+    Gestiono un HomeLab sobre servidor de doble CPU con Proxmox, donde despliego 
+    servicios de seguridad, media y automatización. Próximamente, integraré 
+    Prometheus + Grafana para monitorización avanzada.
+  </p>
+
+  <div class="terminal-box">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">~/homelab/status.sh</span>
+    </div>
+    <pre class="terminal-body">
+$ ssh eloi@homelab
+$ sudo systemctl status
+● pihole.service          - active (running)
+● nginx-proxy-manager     - active (running)
+● wireguard@wg0           - active (running)
+● jellyfin.service        - active (running)
+● n8n.service             - active (running)
+    </pre>
+  </div>
+</div>
+
+---
+
+## 📚 Formación & Experiencia
+
+- 4º de Ingeniería Informática – Tecnocampus.
+- Prácticas como IT Support (Nutrisport/Tradebe): soporte a usuarios, gestión de AD, VPNs, firewalls.
+- Proyectos personales centrados en ciberseguridad, HomeLab y automatización.
+
+---
+
+## 📬 Contacto
+
+- GitHub: [TheEgea](https://github.com/TheEgea)
+- LinkedIn: *(pondríamos tu URL personalizada)*
+- Email: *(tu correo profesional)*
