@@ -1,42 +1,41 @@
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TheEgea - Ingeniería Informática & Ciberseguridad</title>
+  <title>Eloi Egea — Computer Engineering & Cybersecurity</title>
   <link rel="stylesheet" href="./public/css/style.css">
 </head>
 <body>
 
 <nav class="navbar">
-  <a href="./index.html" class="logo">TheEgea</a>
+  <a href="./index.html" class="logo">Eloi Egea</a>
   <div class="nav-links">
-    <a href="./index.html">Inicio</a>
-    <a href="./public/pages/trayectoria.html">Trayectoria</a>
-    <!--<a href="./public/pages/eventos.html">Eventos</a>
-    <a href="./public/pages/proyectos.html">Proyectos</a>
-    <a href="./public/pages/contacto.html">Contacto</a>-->
-    <a  class="space"></a>
-    <a  class="space"></a>
+    <a href="./index.html">Home</a>
+    <a href="./public/pages/trayectoria.html">Background</a>
+    <a href="./public/pages/proyectos.html">Projects</a>
+    <a href="#contacto">Contact</a>
   </div>
 </nav>
 
 <canvas id="matrix-bg"></canvas>
 
-
-
 <div class="hero">
-  <h1>TheEgea</h1>
-  <h2>Ingeniería Informática · Ciberseguridad · HomeLab</h2>
-  
+  <h1>Eloi Egea</h1>
+  <h2>Computer Engineering · Cybersecurity · HomeLab</h2>
+
   <div class="about-me">
-    <h3>Sobre mí</h3>
+    <h3>About me</h3>
     <p>
-      Me llamo <strong>Eloi Egea</strong>, estudiante de 4º de Ingeniería Informática en Tecnocampus 
-      especializado en <strong>ciberseguridad</strong> y administración de sistemas.
+      Final-year Computer Engineering student at <strong>Tecnocampus (UPF)</strong>,
+      wrapping up my degree with a thesis on <strong>ethical pentesting</strong> and
+      offensive/defensive cybersecurity labs.
     </p>
     <p>
-      Mantengo un <strong>HomeLab avanzado</strong> con Proxmox donde despliego servicios de 
-      seguridad, media y automatización.
+      I'm passionate about security from every angle — networks, systems, web apps and digital forensics.
+      Outside of university, I run my own <strong>HomeLab</strong> on Proxmox where I experiment with
+      virtualisation, automation and self-hosted services. I also take part in <strong>CTFs</strong>
+      and research hackathons.
     </p>
   </div>
 </div>
@@ -46,16 +45,19 @@
 
 <div class="skills-grid">
   <div class="skill-card">
-    <h3>Ciberseguridad</h3>
-    <p>Hardening, VPNs (WireGuard), firewalls Fortinet, segmentación de red, Pi-hole como DNS filtrante.</p>
+    <h3>Cybersecurity</h3>
+    <p>Offensive & defensive pentesting, firewalls (pfSense, VyOS, Fortinet), WireGuard VPN,
+       network segmentation, digital forensics, CTFs, Linux hardening.</p>
   </div>
   <div class="skill-card">
     <h3>HomeLab & DevOps</h3>
-    <p>Proxmox VE, Docker, Nginx Proxy Manager, Jellyfin, N8N, despliegues y servicios autosuficientes.</p>
+    <p>Proxmox VE, Docker, Nginx Proxy Manager, Pi-hole, WireGuard, Jellyfin, N8N,
+       Immich, ZFS — all self-hosted and running in production.</p>
   </div>
   <div class="skill-card">
-    <h3>Programación</h3>
-    <p>Python, Java, scripting en Bash, automatización de tareas, pequeños proyectos de tooling.</p>
+    <h3>Programming</h3>
+    <p>Python, Java, Bash scripting, LaTeX, task automation, custom tooling
+       and full-stack university projects.</p>
   </div>
 </div>
 
@@ -66,99 +68,104 @@
   <div class="homelab-content">
     <div class="homelab-text">
       <p>
-        Gestiono un <strong>HomeLab</strong> sobre servidor de doble CPU con <strong>Proxmox VE</strong>, 
-        donde despliego servicios de seguridad, media y automatización.
+        Dedicated server running <strong>dual Intel Xeon E5-2680v4</strong> CPUs with 64 GB of RAM,
+        managed with <strong>Proxmox VE</strong>. Over 10 VMs and containers in production,
+        ZFS storage and a VLAN-segmented network.
       </p>
-      <p><strong>Stack actual:</strong></p>
+      <p><strong>Current stack:</strong></p>
       <ul class="homelab-stack">
-        <li>Pi-hole (DNS + Ad blocking)</li>
-        <li>Nginx Proxy Manager (Reverse proxy)</li>
-        <li>WireGuard VPN</li>
-        <li>Jellyfin (Media server)</li>
-        <li>N8N (Automatización)</li>
-        <li>Próximo: Prometheus + Grafana</li>
+        <li>Pi-hole — DNS filtering + ad blocking</li>
+        <li>Nginx Proxy Manager — reverse proxy with wildcard SSL</li>
+        <li>WireGuard VPN — secure remote access</li>
+        <li>Jellyfin — media server</li>
+        <li>Immich — self-hosted photo management</li>
+        <li>N8N — workflow automation</li>
+        <li>fail2ban — SSH & service protection</li>
       </ul>
     </div>
     <div class="terminal-box">
-    <div class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <span class="terminal-title">~/homelab/status.sh</span>
+      <div class="terminal-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-title">~/homelab/status.sh</span>
+      </div>
+      <pre class="terminal-body">$ ssh eloi@proxmox
+eloi@proxmox:~$ docker ps --format "{{.Names}}\t{{.Status}}"
+pihole          Up 30 days
+nginx-pm        Up 30 days
+jellyfin        Up 30 days
+immich          Up 30 days
+n8n             Up 30 days
+wg-easy         Up 30 days
+eloi@proxmox:~$ zpool status | grep state
+  state: ONLINE</pre>
     </div>
-    <pre class="terminal-body">$ ssh eloi@homelab
-$ sudo systemctl status
-● pihole.service          - active (running)
-● nginx-proxy-manager     - active (running)
-● wireguard@wg0           - active (running)
-● jellyfin.service        - active (running)
-● n8n.service             - active (running)</pre>
+  </div>
+
+  <div class="homelab-image">
+    <img src="./public/images/Proxmox.png" alt="HomeLab Dashboard - Proxmox">
   </div>
 </div>
-    
-    <!-- Opcional: Descomentar cuando tengas screenshot -->
-    
-    <div class="homelab-image">
-      <img src="./public/images/Proxmox.png" alt="HomeLab Dashboard">
-      
-    </div>
-    
-  </div>
 
-  
-
-<!-- PROYECTOS -->
-<h2 class="section-title">Proyectos Destacados</h2>
+<!-- PROJECTS -->
+<h2 class="section-title">Featured Projects</h2>
 
 <div class="projects-grid">
   <div class="project-card">
-    <h3>LabGamblers</h3>
-    <p>Plataforma tipo YouTube desarrollada como proyecto universitario. Sistema de subida, streaming y gestión de contenido multimedia.</p>
+    <h3>Thesis — Ethical Pentesting Lab</h3>
+    <p>Design and implementation of 4 offensive/defensive cybersecurity labs on EVE-NG:
+       reconnaissance, web vulnerabilities (XSS, SQLi, CMDi), incident response and a ransomware scenario.
+       Full technical documentation in LaTeX.</p>
     <div class="tech-tags">
-      <span class="tag">Python</span>
-      <span class="tag">SpringBoot</span>
-      <span class="tag">Docker</span>
-    </div>
-    <a href="https://github.com/TheEgea/Lab_Gamblers" target="_blank" class="project-link">Ver repositorio →</a>
-  </div>
-
-  <div class="project-card">
-    <h3>TFG - Ciberseguridad</h3>
-    <p>Trabajo Final de Grado enfocado en análisis de vulnerabilidades y hardening de sistemas. Documentación técnica completa.</p>
-    <div class="tech-tags">
-      <span class="tag">LaTeX</span>
+      <span class="tag">EVE-NG</span>
+      <span class="tag">pfSense</span>
       <span class="tag">Pentesting</span>
-      <span class="tag">Research</span>
+      <span class="tag">LaTeX</span>
+      <span class="tag">Forensics</span>
     </div>
-    <a href="https://github.com/TheEgea/tfg" target="_blank" class="project-link">Ver repositorio →</a>
+    <a href="https://theegea.github.io/TFG/" target="_blank" class="project-link">View website →</a>
   </div>
 
   <div class="project-card">
-    <h3>Proyectos Varios</h3>
-    <p>Colección de herramientas y scripts personales: descargador de YouTube, automatización de tareas, parseo de logs, etc.</p>
+    <h3>LabGamblers</h3>
+    <p>YouTube-style video streaming platform built as a university team project.
+       Python/Flask backend, Spring Boot REST API, TypeScript frontend, Docker + PostgreSQL.</p>
     <div class="tech-tags">
       <span class="tag">Python</span>
-      <span class="tag">Bash</span>
-      <span class="tag">Automation</span>
+      <span class="tag">Spring Boot</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">Docker</span>
+      <span class="tag">PostgreSQL</span>
     </div>
-    <a href="https://github.com/TheEgea/proyectos" target="_blank" class="project-link">Ver repositorio →</a>
+    <a href="https://github.com/TheEgea/Lab_Gamblers" target="_blank" class="project-link">View repository →</a>
+  </div>
+
+  <div class="project-card">
+    <h3>CTFs & Hackathons</h3>
+    <p>CTF competitions (Hack4U) covering forensics, stego, crypto and reversing.
+       Research hackathon at Forschungszentrum Jülich (Germany) on Property Inference Attacks in ML models.</p>
+    <div class="tech-tags">
+      <span class="tag">CTF</span>
+      <span class="tag">Forensics</span>
+      <span class="tag">Python</span>
+      <span class="tag">ML Adversarial</span>
+    </div>
+    <a href="./public/pages/proyectos.html" class="project-link">View all projects →</a>
   </div>
 </div>
 
-<!-- Redes Sociales -->
-<section class="contact">
-  <h2 class="section-title">Redes Sociales</h2>
-  
+<!-- CONTACT -->
+<footer class="contact-footer" id="contacto">
+  <h2 class="section-title">Get in touch</h2>
+  <p class="contact-subtitle">Got a proposal, a question, or just want to connect?</p>
   <div class="contact-buttons">
-    <a class="btn primary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
-    <a class="btn secondary" href="https://www.linkedin.com/in/eloi-egea" target="_blank">LinkedIn</a>
+    <a class="btn primary" href="https://www.linkedin.com/in/eloi-egea" target="_blank">LinkedIn</a>
+    <a class="btn secondary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
+    <a class="btn secondary" href="mailto:eloi240803@gmail.com">eloi240803@gmail.com</a>
   </div>
-  <!----
-  <p class="contact-email">
-    También puedes contactarme en: <a href="mailto:eloi240803@gmail.com">eloi240803@gmail.com</a>
-  </p>
--->
-</section>
+  <p class="footer-copy">© 2025 Eloi Egea</p>
+</footer>
 
 <script src="./public/js/matrix.js"></script>
 

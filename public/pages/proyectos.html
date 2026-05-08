@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Eloi Egea</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../../index.html" class="logo">Eloi Egea</a>
+  <div class="nav-links">
+    <a href="../../index.html">Home</a>
+    <a href="./trayectoria.html">Background</a>
+    <a href="./proyectos.html">Projects</a>
+    <a href="#contacto">Contact</a>
+  </div>
+</nav>
+
+<canvas id="matrix-bg"></canvas>
+
+<div class="proyectos-page">
+  <h1 class="page-title">Projects</h1>
+  <p class="page-subtitle">A selection of academic, personal and research projects.</p>
+
+  <!-- THESIS -->
+  <section class="project-section">
+    <div class="project-full-card featured">
+      <div class="project-full-header">
+        <div>
+          <span class="project-category">Bachelor's Thesis</span>
+          <h2>Ethical Pentesting Lab</h2>
+          <p class="project-year">2025 — Present</p>
+        </div>
+        <a href="https://theegea.github.io/TFG/" target="_blank" class="btn secondary">View website →</a>
+      </div>
+      <p class="project-desc">
+        Design, implementation and documentation of four offensive/defensive cybersecurity labs
+        built on <strong>EVE-NG</strong> and deployed on Proxmox. Each lab simulates a real-world
+        scenario with a full network topology (pfSense, VyOS, Ubuntu Server/Desktop).
+      </p>
+      <div class="project-labs">
+        <div class="lab-item">
+          <span class="lab-number">LAB 1</span>
+          <div>
+            <strong>Reconnaissance &amp; Enumeration</strong>
+            <p>Network scanning, service enumeration and traffic analysis with Wireshark. pfSense and VyOS configured from scratch.</p>
+          </div>
+        </div>
+        <div class="lab-item">
+          <span class="lab-number">LAB 2</span>
+          <div>
+            <strong>Web Vulnerabilities</strong>
+            <p>Exploitation of XSS, SQL Injection and Command Injection on a purposely vulnerable Flask app deployed in the lab.</p>
+          </div>
+        </div>
+        <div class="lab-item">
+          <span class="lab-number">LAB 3</span>
+          <div>
+            <strong>Incident Response &amp; Forensics</strong>
+            <p>Log analysis, IOC detection and attack timeline reconstruction. Privilege escalation via sudo/find.</p>
+          </div>
+        </div>
+        <div class="lab-item">
+          <span class="lab-number">LAB 4</span>
+          <div>
+            <strong>CipherStrike — Ransomware</strong>
+            <p>Ransomware attack simulation: initial infection, file encryption, lateral movement and defensive analysis.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tech-tags">
+        <span class="tag">EVE-NG</span>
+        <span class="tag">pfSense</span>
+        <span class="tag">VyOS</span>
+        <span class="tag">Nmap</span>
+        <span class="tag">Burp Suite</span>
+        <span class="tag">Metasploit</span>
+        <span class="tag">Wireshark</span>
+        <span class="tag">LaTeX</span>
+        <span class="tag">Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- LABGAMBLERS -->
+  <section class="project-section">
+    <div class="project-full-card">
+      <div class="project-full-header">
+        <div>
+          <span class="project-category">University Project</span>
+          <h2>LabGamblers</h2>
+          <p class="project-year">2024</p>
+        </div>
+        <a href="https://github.com/TheEgea/Lab_Gamblers" target="_blank" class="btn secondary">View repository →</a>
+      </div>
+      <p class="project-desc">
+        YouTube-style video streaming platform built as a university team project.
+        Microservices architecture with a <strong>Python/Flask</strong> backend handling multimedia processing,
+        a <strong>Spring Boot</strong> REST API, a TypeScript frontend and a PostgreSQL database —
+        all containerised with Docker Compose.
+      </p>
+      <div class="tech-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Flask</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Docker</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">REST API</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTF & HACKATHONS -->
+  <section class="project-section">
+    <div class="project-full-card">
+      <div class="project-full-header">
+        <div>
+          <span class="project-category">CTF &amp; Competitions</span>
+          <h2>CTF Hack4U &amp; Hackathon Jülich</h2>
+          <p class="project-year">2025</p>
+        </div>
+      </div>
+      <p class="project-desc">
+        Participation in cybersecurity competitions and research hackathons.
+      </p>
+      <div class="ctf-grid">
+        <div class="ctf-item">
+          <h3>CTF Hack4U</h3>
+          <p>Solved challenges across multiple categories: <strong>forensics</strong> (disk image analysis, memory dumps),
+             <strong>steganography</strong> (hidden data in images and audio), <strong>cryptography</strong> (classical and modern cryptanalysis),
+             <strong>reversing</strong> and <strong>scripting</strong>.</p>
+          <div class="tech-tags">
+            <span class="tag">Forensics</span>
+            <span class="tag">Stego</span>
+            <span class="tag">Crypto</span>
+            <span class="tag">Reversing</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+        <div class="ctf-item">
+          <h3>Hackathon — Forschungszentrum Jülich (Germany)</h3>
+          <p>Research hackathon at <strong>Forschungszentrum Jülich</strong>, one of Europe's largest supercomputing centres.
+             Challenge: <strong>Property Inference Attack</strong> — extracting training data properties from ML models
+             running on a SLURM HPC cluster.</p>
+          <div class="tech-tags">
+            <span class="tag">Machine Learning</span>
+            <span class="tag">ML Adversarial</span>
+            <span class="tag">Python</span>
+            <span class="tag">SLURM</span>
+            <span class="tag">HPC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECTS -->
+  <section class="project-section">
+    <div class="project-full-card">
+      <div class="project-full-header">
+        <div>
+          <span class="project-category">Personal</span>
+          <h2>Python Practice Projects</h2>
+          <p class="project-year">2023 — Present</p>
+        </div>
+        <a href="https://github.com/TheEgea/proyectos" target="_blank" class="btn secondary">View repository →</a>
+      </div>
+      <p class="project-desc">
+        A collection of personal projects built to practise Python outside of university — no structured
+        guide, just building things that seemed useful or fun: mini-games (Pong, Snake), a YouTube/music
+        downloader with name similarity search, a to-do list app, voice-controlled note dictation,
+        and a messaging bot. The point was to learn by doing.
+      </p>
+      <div class="tech-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Pygame</span>
+        <span class="tag">yt-dlp</span>
+        <span class="tag">Turtle</span>
+        <span class="tag">SpeechRecognition</span>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- CONTACT -->
+<footer class="contact-footer" id="contacto">
+  <h2 class="section-title">Get in touch</h2>
+  <p class="contact-subtitle">Got a proposal, a question, or just want to connect?</p>
+  <div class="contact-buttons">
+    <a class="btn primary" href="https://www.linkedin.com/in/eloi-egea" target="_blank">LinkedIn</a>
+    <a class="btn secondary" href="https://github.com/TheEgea" target="_blank">GitHub</a>
+    <a class="btn secondary" href="mailto:eloi240803@gmail.com">eloi240803@gmail.com</a>
+  </div>
+  <p class="footer-copy">© 2025 Eloi Egea</p>
+</footer>
+
+<script src="../js/matrix.js"></script>
+
+</body>
+</html>
