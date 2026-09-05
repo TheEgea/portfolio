@@ -39,3 +39,7 @@ function draw() {
 }
 
 draw();
+
+// Auto-update footer year
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
